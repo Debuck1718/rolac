@@ -5,6 +5,8 @@ const footerLinks = [
   ["Programs", "/programs"],
   ["Services", "/services"],
   ["Opportunities", "/opportunities"],
+  ["Apply", "/apply"],
+  ["Business seminars", "/seminars"],
   ["Partnerships", "/partnerships"],
   ["Culture", "/culture"],
 ];

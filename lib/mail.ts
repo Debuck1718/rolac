@@ -6,6 +6,11 @@ type ContactEmail = {
   topic: string;
   message: string;
   to: string;
+  attachments?: Array<{
+    filename: string;
+    content: Buffer;
+    contentType: string;
+  }>;
 };
 
 /**
@@ -23,6 +28,7 @@ export async function sendContactEmail({
   topic,
   message,
   to,
+  attachments,
 }: ContactEmail) {
   const host = process.env.SMTP_HOST;
   const user = process.env.SMTP_USER;
@@ -57,5 +63,6 @@ export async function sendContactEmail({
       "",
       message,
     ].join("\n"),
+    attachments,
   });
 }

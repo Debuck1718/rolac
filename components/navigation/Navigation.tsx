@@ -8,6 +8,8 @@ const links = [
   ["About", "/about"],
   ["Programs", "/programs"],
   ["Opportunities", "/opportunities"],
+  ["Apply", "/apply"],
+  ["Seminars", "/seminars"],
   ["Services", "/services"],
   ["Culture", "/culture"],
   ["Partnerships", "/partnerships"],
@@ -24,11 +26,11 @@ export function Navigation() {
           <Image src="/favicon.ico" alt="ROLAC logo" width={42} height={42} className="h-10 w-10 rounded-full object-cover" priority />
           <span className="text-lg font-bold tracking-[0.2em] text-slate-950">ROLAC</span>
         </Link>
-        <nav aria-label="Main navigation" className="hidden items-center gap-6 lg:flex">
+        <nav aria-label="Main navigation" className="hidden items-center gap-4 lg:flex">
           {links.map(([label, href]) => (
             <Link key={href} href={href} className="text-sm font-medium text-slate-600 transition hover:text-slate-950">{label}</Link>
           ))}
-          <Link href="/contact" className="rounded-full bg-slate-950 px-5 py-3 text-sm font-semibold text-white transition hover:bg-slate-700">Get started</Link>
+          <Link href="/apply" className="rounded-full bg-slate-950 px-5 py-3 text-sm font-semibold text-white transition hover:bg-slate-700">Apply now</Link>
         </nav>
         <button type="button" className="rounded-lg border-slate-300 px-3 py-2 text-sm font-semibold text-slate-950 lg:hidden" aria-expanded={open} aria-controls="mobile-navigation" onClick={() => setOpen(!open)}>
           {open ? "Close" : "Menu"}

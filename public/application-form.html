@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ROLAC Registration Form</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        color: #0f172a;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 40px;
+        line-height: 1.5;
+      }
+      h1 {
+        margin-bottom: 4px;
+      }
+      h2 {
+        border-bottom: 2px solid #0ea5e9;
+        padding-bottom: 6px;
+        margin-top: 32px;
+      }
+      p {
+        color: #475569;
+      }
+      .row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 24px;
+      }
+      .line {
+        border-bottom: 1px solid #64748b;
+        min-height: 28px;
+        margin-top: 18px;
+      }
+      .check {
+        margin: 10px 0;
+      }
+      @media (max-width: 600px) {
+        body {
+          padding: 24px;
+        }
+        .row {
+          grid-template-columns: 1fr;
+        }
+      }
+      @media print {
+        body {
+          padding: 0;
+        }
+        .no-print {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <p><strong>ROLAC — Rosa's Language Centre</strong></p>
+    <h1>Registration / Application Form</h1>
+    <p>
+      Complete this form clearly and return it through the application portal or
+      by email to <strong>rolac4all@gmail.com</strong>.
+    </p>
+    <h2>1. Applicant details</h2>
+    <div class="row">
+      <div>
+        Full name
+        <div class="line"></div>
+      </div>
+      <div>
+        Date of birth
+        <div class="line"></div>
+      </div>
+    </div>
+    <div class="row">
+      <div>
+        Email address
+        <div class="line"></div>
+      </div>
+      <div>
+        Phone / WhatsApp
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      Residential address
+      <div class="line"></div>
+    </div>
+    <h2>2. Application</h2>
+    <p class="check">
+      ☐ Student &nbsp;&nbsp; ☐ Teacher &nbsp;&nbsp; ☐ Other applicant
+    </p>
+    <p class="check">
+      Programme of interest: ☐ Professional English &nbsp; ☐ French Immersion
+      &nbsp; ☐ Student Exchange &nbsp; ☐ Teacher Placement &nbsp; ☐ Other
+    </p>
+    <div>
+      Previous education, training, or relevant experience
+      <div class="line"></div>
+      <div class="line"></div>
+    </div>
+    <h2>3. Statement</h2>
+    <p>Why are you applying, and what do you hope to achieve?</p>
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+    <h2>4. Declaration</h2>
+    <p>
+      I confirm that the information provided is accurate and understand that
+      ROLAC may contact me about this application.
+    </p>
+    <div class="row">
+      <div>
+        Applicant signature
+        <div class="line"></div>
+      </div>
+      <div>
+        Date
+        <div class="line"></div>
+      </div>
+    </div>
+    <p class="no-print" style="margin-top: 40px">
+      Tip: use your browser's Print → Save as PDF to create a copy for writing
+      or digital annotation.
+    </p>
+  </body>
+</html>
