@@ -19,6 +19,22 @@ export function SiteFooter() {
             Connecting Ghana and the Francophone world through education,
             language, mobility, and opportunity.
           </p>
+          <div className="mt-8 border-t border-white/10 pt-6">
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-sky-300">
+              Digital platform partner
+            </p>
+            <a
+              href="https://evantradebuckman.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-2 inline-flex items-center gap-2 text-sm font-semibold text-white transition hover:text-sky-200"
+            >
+              Evantra <span aria-hidden="true">↗</span>
+            </a>
+            <p className="mt-2 max-w-sm text-xs leading-5 text-slate-400">
+              Digital systems and technology support by Evantra.
+            </p>
+          </div>
         </div>
         <div>
           <h2 className="text-sm font-semibold uppercase tracking-[0.2em] text-sky-300">
