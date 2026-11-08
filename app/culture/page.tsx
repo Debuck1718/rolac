@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import { SectionPage, DetailCard } from "@/components/ui/SectionPage";
+import { images } from "@/lib/images";
 
 export const metadata: Metadata = {
   title: "Culture",
@@ -31,15 +32,15 @@ const experiences = [
   {
     title: "National Oral French Quiz",
     tagline: "Speak. Compete. Connect.",
-    image: "/photos/program-card.jpg",
-    alt: "Contestants at a ROLAC bilingual event",
+    image: images.newspaperPublication,
+    alt: "Newspaper coverage of the National Oral French Quiz launch",
     items: ["Regional rounds", "National finals", "Open to learners everywhere"],
   },
   {
     title: "Bilingual Reality Show",
     tagline: "Two languages. One stage.",
-    image: "/photos/grads-card.jpg",
-    alt: "ROLAC learners in formal dress at a graduation ceremony",
+    image: images.ghanaDevelopmentAward,
+    alt: "ROLAC receiving the Ghana Development Award for Francophone education",
     items: ["Live performances", "Community voting", "Emerging talent"],
   },
 ];
@@ -57,8 +58,8 @@ export default function CulturePage() {
       eyebrow="Culture"
       title="A culture built around people"
       description="See the values, perspectives, and practices that make the ROLAC community distinctive."
-      heroImage="/photos/students-portrait.jpg"
-      heroAlt="ROLAC students taking part in a group activity"
+      heroImage={images.quizLaunchSpeech}
+      heroAlt="The CEO speaking at the National Oral French Quiz launch at the British Council"
     >
       <section className="bg-white">
         <div className="mx-auto max-w-5xl px-6 py-14 sm:px-10 sm:py-20">

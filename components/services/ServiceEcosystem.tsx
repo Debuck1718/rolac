@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { images } from "@/lib/images";
 
 const serviceAreas = [
   {
@@ -6,8 +7,8 @@ const serviceAreas = [
     number: "01",
     description: "Open doors to learning across languages, classrooms, and borders.",
     items: ["Professional English", "French programs", "Student exchange", "Study opportunities"],
-    image: "/photos/lectures-card.jpg",
-    alt: "A ROLAC lecturer teaching a class",
+    image: images.labStJoseph,
+    alt: "A ROLAC language laboratory installed at St Joseph's Seminary",
     accent: "bg-amber-300",
   },
   {
@@ -15,8 +16,8 @@ const serviceAreas = [
     number: "02",
     description: "Make communication clearer, more confident, and more connected.",
     items: ["Translation", "Interpretation", "French laboratories"],
-    image: "/photos/students-card.jpg",
-    alt: "Students practising language together",
+    image: images.labPrempeh,
+    alt: "Students at a ROLAC language laboratory installation at Prempeh College",
     accent: "bg-sky-300",
   },
   {
@@ -24,8 +25,8 @@ const serviceAreas = [
     number: "03",
     description: "Turn international ambition into practical, supported movement.",
     items: ["Teacher recruitment", "Student placement", "Accommodation"],
-    image: "/photos/grads-card.jpg",
-    alt: "ROLAC students celebrating graduation",
+    image: images.labMampong,
+    alt: "A ROLAC language laboratory installed at Mampong Municipal",
     accent: "bg-indigo-300",
   },
   {
@@ -33,8 +34,8 @@ const serviceAreas = [
     number: "04",
     description: "Create shared experiences that make language and identity come alive.",
     items: ["National Oral French Quiz", "Bilingual Reality Show", "Events & engagement"],
-    image: "/photos/program-card.jpg",
-    alt: "Community members at a ROLAC event",
+    image: images.newspaperPublication,
+    alt: "Newspaper coverage of the National Oral French Quiz launch",
     accent: "bg-rose-300",
   },
 ];

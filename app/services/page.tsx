@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import { SectionPage } from "@/components/ui/SectionPage";
+import { images } from "@/lib/images";
 
 export const metadata: Metadata = {
   title: "Services",
@@ -8,10 +9,10 @@ export const metadata: Metadata = {
 };
 
 const services = [
-  { title: "Education", body: "Open doors to learning across languages, classrooms, and borders.", items: ["Professional English", "French programs", "Student exchange", "Study opportunities"], image: "/photos/lectures-card.jpg", alt: "A ROLAC lecturer teaching a class" },
-  { title: "Language", body: "Make communication clearer, more confident, and more connected.", items: ["Translation", "Interpretation", "French laboratories"], image: "/photos/students-card.jpg", alt: "Students practising language together" },
-  { title: "Mobility", body: "Turn international ambition into practical, supported movement.", items: ["Teacher recruitment", "Student placement", "Accommodation"], image: "/photos/grads-card.jpg", alt: "ROLAC students celebrating a graduation" },
-  { title: "Culture", body: "Create shared experiences that make language and identity come alive.", items: ["National Oral French Quiz", "Bilingual Reality Show", "Events and engagement"], image: "/photos/program-card.jpg", alt: "People gathered at a ROLAC community event" },
+  { title: "Education", body: "Open doors to learning across languages, classrooms, and borders.", items: ["Professional English", "French programs", "Student exchange", "Study opportunities"], image: images.labStJoseph, alt: "A ROLAC language laboratory installed at St Joseph's Seminary" },
+  { title: "Language", body: "Make communication clearer, more confident, and more connected.", items: ["Translation", "Interpretation", "French laboratories"], image: images.labPrempeh, alt: "A ROLAC language laboratory installed at Prempeh College" },
+  { title: "Mobility", body: "Turn international ambition into practical, supported movement.", items: ["Teacher recruitment", "Student placement", "Accommodation"], image: images.labMampong, alt: "A ROLAC language laboratory installed at Mampong Municipal" },
+  { title: "Culture", body: "Create shared experiences that make language and identity come alive.", items: ["National Oral French Quiz", "Bilingual Reality Show", "Events and engagement"], image: images.quizLaunchSpeech, alt: "The launch of the National Oral French Quiz at the British Council" },
 ];
 
 export default function ServicesPage() {
@@ -20,8 +21,8 @@ export default function ServicesPage() {
       eyebrow="Services"
       title="Support for meaningful progress"
       description="One connected ecosystem for education, language, mobility, and culture — built to turn ambitious goals into practical, people-centered results."
-      heroImage="/photos/lectures-card.jpg"
-      heroAlt="A ROLAC lecturer teaching a class"
+      heroImage={images.labAmansieWest}
+      heroAlt="A ROLAC language laboratory installation at Amansie West District"
     >
       <section className="bg-white">
         <div className="mx-auto grid max-w-5xl gap-5 px-6 pb-16 sm:grid-cols-2 sm:px-10 sm:pb-24">

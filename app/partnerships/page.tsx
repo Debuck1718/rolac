@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { SectionPage } from "@/components/ui/SectionPage";
+import { images } from "@/lib/images";
 
 export const metadata: Metadata = {
   title: "Partnerships",
@@ -61,8 +62,8 @@ export default function PartnershipsPage() {
       eyebrow="Partnerships"
       title="Stronger together"
       description="Partner with Rosa's Language Centre to build education, language, and mobility programmes that create shared value and lasting change across Ghana and Francophone Africa."
-      heroImage="/photos/program-card.jpg"
-      heroAlt="Members of the ROLAC community at a programme event"
+      heroImage={images.donationWaVideo}
+      heroAlt="ROLAC donating language laboratories at Wa"
     >
       <section className="bg-white">
         <div className="mx-auto max-w-5xl px-6 pb-16 sm:px-10 sm:pb-24">

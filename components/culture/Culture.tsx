@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { images } from "@/lib/images";
 
 const cultureExperiences = [
   {
@@ -7,8 +8,8 @@ const cultureExperiences = [
     message: "Speak. Compete. Connect.",
     action: "Discover",
     href: "/culture",
-    image: "/photos/program-card.jpg",
-    alt: "Contestants at a ROLAC bilingual event",
+    image: images.newspaperPublication,
+    alt: "Newspaper coverage of the National Oral French Quiz launch",
     accent: "from-amber-400 via-orange-500 to-rose-500",
     symbol: "01",
   },
@@ -17,8 +18,8 @@ const cultureExperiences = [
     message: "Two languages. One stage.",
     action: "Explore",
     href: "/culture",
-    image: "/photos/grads-card.jpg",
-    alt: "ROLAC students celebrating an achievement",
+    image: images.teamAward,
+    alt: "The ROLAC team receiving an award on stage",
     accent: "from-sky-400 via-indigo-500 to-violet-600",
     symbol: "02",
   },

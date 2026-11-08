@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import { images } from "@/lib/images";
 
 export const metadata: Metadata = {
   title: "Business Seminars",
@@ -37,8 +38,8 @@ export default function SeminarsPage() {
     <main className="flex-1">
       <section className="relative isolate overflow-hidden bg-slate-950 text-white">
         <Image
-          src="/photos/program-card.jpg"
-          alt="Business and community participants at a ROLAC event"
+          src={images.ceoAward}
+          alt="The ROLAC CEO receiving an award at the Africa Global Trade and Investment conference"
           width={800}
           height={600}
           priority

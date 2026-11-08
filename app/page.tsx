@@ -5,6 +5,7 @@ import { GhanaFrancophone } from "@/components/identity/GhanaFrancophone";
 import { ServiceEcosystem } from "@/components/services/ServiceEcosystem";
 import { NetworkFit } from "@/components/network/NetworkFit";
 import { Culture } from "@/components/culture/Culture";
+import { images } from "@/lib/images";
 
 export default function Home() {
   return (
@@ -31,8 +32,8 @@ export default function Home() {
           </div>
           <div className="overflow-hidden rounded-[2rem]">
             <Image
-              src="/photos/students-portrait.jpg"
-              alt="ROLAC students learning together"
+              src={images.gtvInterview}
+              alt="The ROLAC CEO interviewed by GTV during a laboratory installation in the Upper West Region"
               width={900}
               height={1200}
               sizes="(max-width: 1024px) 100vw, 45vw"

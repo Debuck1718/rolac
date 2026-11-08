@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { images } from "@/lib/images";
 
 const team = [
   { name: "Rosemary Amankwah", role: "Chief Executive Officer (CEO)" },
@@ -28,8 +29,8 @@ export function Team() {
 
         <div className="relative mt-8 aspect-[16/9] overflow-hidden rounded-2xl sm:aspect-[21/9]">
           <Image
-            src="/photos/program-wide.jpg"
-            alt="ROLAC team members at a programme event"
+            src={images.teamAward}
+            alt="The ROLAC team receiving an award on stage"
             width={1600}
             height={900}
             sizes="(max-width: 1024px) 100vw, 1024px"

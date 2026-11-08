@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { images } from "@/lib/images";
 
 export function Hero() {
   return (
@@ -45,8 +46,8 @@ export function Hero() {
           <div className="motion-safe:animate-float-delayed absolute -bottom-20 -left-14 h-64 w-64 rounded-full bg-sky-300/80" />
           <div className="relative flex h-full min-h-[19rem] items-center justify-center overflow-hidden rounded-[1.5rem] border-white/70 bg-white/35 p-3 backdrop-blur-sm sm:min-h-[29rem] sm:p-5">
             <Image
-              src="/photos/lectures-card.jpg"
-              alt="A ROLAC lecturer teaching a class"
+              src={images.gtvInterview}
+              alt="The ROLAC CEO interviewed by GTV during a laboratory installation in the Upper West Region"
               width={800}
               height={1000}
               priority

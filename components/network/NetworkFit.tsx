@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { useState } from "react";
+import { images } from "@/lib/images";
 
 const networkRoles = [
   {
@@ -127,8 +128,8 @@ export function NetworkFit() {
 
         <div className="mt-6 overflow-hidden rounded-[1.75rem] sm:mt-8">
           <Image
-            src="/photos/program-wide.jpg"
-            alt="Members of the ROLAC community programme"
+            src={images.labAmansieWest}
+            alt="A ROLAC language laboratory installation at Amansie West District"
             width={1600}
             height={900}
             sizes="(max-width: 1280px) 100vw, 1200px"

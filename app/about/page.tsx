@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import { SectionPage, DetailCard } from "@/components/ui/SectionPage";
 import { Team } from "@/components/about/Team";
+import { images } from "@/lib/images";
 
 export const metadata: Metadata = {
   title: "About",
@@ -14,8 +15,8 @@ export default function AboutPage() {
       eyebrow="About ROLAC"
       title="Who we are"
       description="ROLAC is a Ghana-based language and education centre connecting Ghana to the Francophone world through learning, mobility, and shared opportunity."
-      heroImage="/photos/lectures-alt.jpg"
-      heroAlt="A ROLAC teacher leading a lesson"
+      heroImage={images.gtvInterview}
+      heroAlt="The ROLAC CEO interviewed by GTV during a laboratory installation in the Upper West Region"
     >
       <section className="bg-white">
         <div className="mx-auto max-w-5xl px-6 pb-16 sm:px-10 sm:pb-20">
@@ -32,8 +33,8 @@ export default function AboutPage() {
             </div>
             <div className="relative overflow-hidden rounded-[1.5rem]">
               <Image
-                src="/photos/students-card.jpg"
-                alt="Participants at a ROLAC programme event"
+                src={images.labSefwiVideo}
+                alt="Headteachers and staff at a ROLAC laboratory installation in Sefwi"
                 width={800}
                 height={1000}
                 sizes="(max-width: 640px) 100vw, 45vw"
