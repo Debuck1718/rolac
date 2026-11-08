@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import { SectionPage, DetailCard } from "@/components/ui/SectionPage";
+import { Media } from "@/components/ui/Media";
 import { images } from "@/lib/images";
 
 export const metadata: Metadata = {
@@ -33,7 +33,7 @@ const experiences = [
     title: "National Oral French Quiz",
     tagline: "Speak. Compete. Connect.",
     image: images.newspaperPublication,
-    alt: "Newspaper coverage of the National Oral French Quiz launch",
+    alt: "Newspaper publication of the National Oral French Quiz launch",
     items: ["Regional rounds", "National finals", "Open to learners everywhere"],
   },
   {
@@ -63,9 +63,7 @@ export default function CulturePage() {
     >
       <section className="bg-white">
         <div className="mx-auto max-w-5xl px-6 py-14 sm:px-10 sm:py-20">
-          <p className="text-sm font-semibold uppercase tracking-[0.3em] text-sky-600">
-            What we stand for
-          </p>
+          <p className="eyebrow">What we stand for</p>
           <h2 className="mt-4 max-w-2xl text-[clamp(1.5rem,5vw,2.25rem)] font-semibold leading-tight tracking-tight text-slate-950">
             Language is a shared experience, not a competition we hide behind.
           </h2>
@@ -93,9 +91,7 @@ export default function CulturePage() {
 
       <section className="bg-slate-50">
         <div className="mx-auto max-w-5xl px-6 py-14 sm:px-10 sm:py-20">
-          <p className="text-sm font-semibold uppercase tracking-[0.3em] text-sky-600">
-            On stage
-          </p>
+          <p className="eyebrow">On stage</p>
           <h2 className="mt-4 text-[clamp(1.5rem,5vw,2.25rem)] font-semibold tracking-tight text-slate-950">
             Where language meets the stage
           </h2>
@@ -112,12 +108,13 @@ export default function CulturePage() {
                 className="overflow-hidden rounded-2xl border border-slate-200 bg-white"
               >
                 <div className="relative aspect-[4/3]">
-                  <Image
+                  <Media
                     src={experience.image}
                     alt={experience.alt}
                     fill
                     sizes="(max-width: 640px) 100vw, 50vw"
                     className="object-cover"
+                    video={{ controls: true, preload: "metadata" }}
                   />
                 </div>
                 <figcaption className="p-6">
@@ -150,9 +147,7 @@ export default function CulturePage() {
 
       <section className="bg-white">
         <div className="mx-auto max-w-5xl px-6 py-14 sm:px-10 sm:py-20">
-          <p className="text-sm font-semibold uppercase tracking-[0.3em] text-sky-600">
-            Get involved
-          </p>
+          <p className="eyebrow">Get involved</p>
           <h2 className="mt-4 text-[clamp(1.5rem,5vw,2.25rem)] font-semibold tracking-tight text-slate-950">
             Bring your audience to a ROLAC activity
           </h2>

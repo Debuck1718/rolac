@@ -16,7 +16,7 @@ export default function ContactPage() {
   return (
     <main className="flex-1 bg-white">
       <section className="mx-auto max-w-5xl px-6 py-16 sm:px-10 sm:py-24">
-        <p className="text-sm font-semibold uppercase tracking-[0.3em] text-sky-600">Contact</p>
+        <p className="eyebrow">Contact</p>
         <h1 className="mt-5 text-[clamp(2.25rem,8vw,4rem)] font-semibold leading-tight tracking-tight text-slate-950">Let&apos;s start a conversation</h1>
         <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-600">Have a question, an idea, or an opportunity to share? We would love to hear from you.</p>
 
@@ -25,13 +25,13 @@ export default function ContactPage() {
 
           <div className="grid gap-4 sm:gap-5">
             {channels.map((channel) => (
-              <a key={channel.label} href={channel.href} className="rounded-3xl border border-slate-200 bg-white p-6 transition hover:-translate-y-1 hover:border-slate-950 hover:shadow-lg sm:p-7">
+              <a key={channel.label} href={channel.href} className="card card-hover p-6 sm:p-7">
                 <p className="text-sm font-semibold uppercase tracking-[0.2em] text-sky-600">{channel.label}</p>
                 <p className="mt-3 text-lg font-semibold tracking-tight text-slate-950 sm:text-xl">{channel.value}</p>
                 <p className="mt-2 text-sm text-slate-600">{channel.hint}</p>
               </a>
             ))}
-            <div className="rounded-3xl bg-slate-950 p-6 text-white sm:p-7">
+            <div className="card bg-slate-950 p-6 text-white !border-slate-950 sm:p-7">
               <p className="text-sm font-semibold uppercase tracking-[0.2em] text-amber-300">Visit us</p>
               <address className="mt-3 not-italic leading-7 text-slate-200">
                 Rosa&apos;s Language Centre<br />Post office box 583<br />Art Center, Accra<br />Ghana

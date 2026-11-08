@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import { SectionPage } from "@/components/ui/SectionPage";
+import { Media } from "@/components/ui/Media";
 import { images } from "@/lib/images";
 
 export const metadata: Metadata = {
@@ -61,7 +61,7 @@ const programs = [
     body: "Find and prepare for teaching roles across borders.",
     items: ["Recruitment drives", "Interview preparation", "Relocation guidance"],
     image: images.headteachersTrainingVideo,
-    alt: "Headteachers being trained at Yaa Asantewaa SHS",
+    alt: "ROLAC training headteachers at Yaa Asantewaa SHS",
   },
 ];
 
@@ -82,13 +82,14 @@ export default function ProgramsPage() {
               className="flex flex-col overflow-hidden rounded-2xl border border-slate-200 bg-white transition duration-300 hover:-translate-y-1 hover:border-slate-400 hover:shadow-lg"
             >
               <div className="relative aspect-[4/3] overflow-hidden bg-slate-100">
-                <Image
+                <Media
                   src={program.image}
                   alt={program.alt}
                   width={800}
                   height={600}
                   sizes="(max-width: 640px) 100vw, 50vw"
                   className="h-full w-full object-cover"
+                  video={{ controls: true, preload: "metadata" }}
                 />
               </div>
               <div className="flex flex-1 flex-col p-6">
@@ -124,11 +125,11 @@ export default function ProgramsPage() {
       <section className="bg-sky-50">
         <div className="mx-auto grid max-w-5xl items-center gap-6 px-6 py-12 sm:px-10 sm:py-16 lg:grid-cols-[1fr_auto]">
           <div>
-            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-sky-700">Not sure where to begin?</p>
+            <p className="eyebrow !text-sky-700">Not sure where to begin?</p>
             <h2 className="mt-3 text-2xl font-semibold tracking-tight text-slate-950 sm:text-3xl">Tell us what you want to achieve.</h2>
             <p className="mt-3 max-w-2xl text-slate-600">We can help you choose the right program, pathway, or next step.</p>
           </div>
-          <a href="/contact" className="rounded-full bg-slate-950 px-6 py-4 text-center text-sm font-semibold text-white transition hover:bg-slate-700">Talk to ROLAC</a>
+          <a href="/contact" className="btn btn-primary w-fit">Talk to ROLAC</a>
         </div>
       </section>
     </SectionPage>

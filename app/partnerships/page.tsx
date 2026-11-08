@@ -63,15 +63,15 @@ export default function PartnershipsPage() {
       title="Stronger together"
       description="Partner with Rosa's Language Centre to build education, language, and mobility programmes that create shared value and lasting change across Ghana and Francophone Africa."
       heroImage={images.donationWaVideo}
-      heroAlt="ROLAC donating language laboratories at Wa"
+      heroAlt="Video of ROLAC donating three language laboratories at Wa"
     >
       <section className="bg-white">
         <div className="mx-auto max-w-5xl px-6 pb-16 sm:px-10 sm:pb-24">
-          <p className="text-sm font-semibold uppercase tracking-[0.3em] text-sky-600">Why partner with us</p>
+          <p className="eyebrow">Why partner with us</p>
           <h2 className="mt-4 max-w-3xl text-[clamp(1.75rem,6vw,3rem)] font-semibold leading-tight tracking-tight text-slate-950">What you gain by working with ROLAC</h2>
           <div className="mt-10 grid gap-4 sm:grid-cols-3">
             {benefits.map((benefit) => (
-              <div key={benefit.title} className="rounded-2xl border border-slate-200 bg-slate-50 p-6">
+              <div key={benefit.title} className="card card-hover p-6">
                 <span aria-hidden="true" className="flex h-10 w-10 items-center justify-center rounded-full bg-sky-100 text-lg">✦</span>
                 <h3 className="mt-5 text-base font-semibold tracking-tight text-slate-950">{benefit.title}</h3>
                 <p className="mt-2 text-sm leading-6 text-slate-600">{benefit.body}</p>
@@ -86,7 +86,7 @@ export default function PartnershipsPage() {
           <h2 className="text-[clamp(1.5rem,5vw,2.25rem)] font-semibold tracking-tight text-slate-950">We partner with</h2>
           <div className="mt-8 grid gap-4 sm:grid-cols-2">
             {partnershipTypes.map((item) => (
-              <article key={item.title} className="group flex flex-col rounded-2xl border border-slate-200 bg-white p-6 transition duration-300 hover:-translate-y-1 hover:border-slate-950 hover:shadow-xl sm:p-7">
+              <article key={item.title} className="card card-hover group flex flex-col p-6 sm:p-7">
                 <span aria-hidden="true" className="text-3xl">{item.icon}</span>
                 <h3 className="mt-5 text-xl font-semibold tracking-tight text-slate-950">{item.title}</h3>
                 <p className="mt-3 text-sm leading-6 text-slate-600">{item.body}</p>
@@ -106,11 +106,11 @@ export default function PartnershipsPage() {
 
       <section className="bg-slate-50">
         <div className="mx-auto max-w-5xl px-6 py-16 sm:px-10 sm:py-24">
-          <p className="text-sm font-semibold uppercase tracking-[0.3em] text-sky-600">How it works</p>
+          <p className="eyebrow">How it works</p>
           <h2 className="mt-4 text-[clamp(1.75rem,6vw,2.5rem)] font-semibold tracking-tight text-slate-950">Three simple steps</h2>
           <ol className="mt-10 grid gap-4 sm:grid-cols-3">
             {steps.map((item) => (
-              <li key={item.step} className="rounded-2xl border border-slate-200 bg-white p-6">
+              <li key={item.step} className="card card-hover p-6">
                 <span className="text-xs font-semibold tracking-[0.2em] text-sky-600">Step {item.step}</span>
                 <h3 className="mt-3 text-lg font-semibold tracking-tight text-slate-950">{item.title}</h3>
                 <p className="mt-2 text-sm leading-6 text-slate-600">{item.body}</p>

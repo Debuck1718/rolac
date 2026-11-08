@@ -1,10 +1,11 @@
 import Link from "next/link";
-import Image from "next/image";
 import { Hero } from "@/components/hero/Hero";
+import { ImpactStories } from "@/components/impact/ImpactStories";
 import { GhanaFrancophone } from "@/components/identity/GhanaFrancophone";
 import { ServiceEcosystem } from "@/components/services/ServiceEcosystem";
 import { NetworkFit } from "@/components/network/NetworkFit";
 import { Culture } from "@/components/culture/Culture";
+import { Media } from "@/components/ui/Media";
 import { images } from "@/lib/images";
 
 export default function Home() {
@@ -12,6 +13,7 @@ export default function Home() {
     <>
       <Hero />
       <GhanaFrancophone />
+      <ImpactStories />
       <ServiceEcosystem />
       <NetworkFit />
       <Culture />
@@ -26,14 +28,14 @@ export default function Home() {
               direction.
             </p>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
-              <Link href="/contact" className="rounded-full bg-slate-950 px-6 py-4 text-center text-sm font-semibold text-white transition hover:bg-slate-700">Contact ROLAC</Link>
-              <Link href="/opportunities" className="rounded-full border border-slate-300 bg-white px-6 py-4 text-center text-sm font-semibold text-slate-800 transition hover:border-slate-950">See opportunities</Link>
+              <Link href="/contact" className="btn btn-primary">Contact ROLAC</Link>
+              <Link href="/opportunities" className="btn btn-outline bg-white">See opportunities</Link>
             </div>
           </div>
-          <div className="overflow-hidden rounded-[2rem]">
-            <Image
+          <div className="media-frame">
+            <Media
               src={images.gtvInterview}
-              alt="The ROLAC CEO interviewed by GTV during a laboratory installation in the Upper West Region"
+              alt="The ROLAC CEO interviewed by GTV during a laboratory installation in the Upper West Region, speaking about the importance of the work"
               width={900}
               height={1200}
               sizes="(max-width: 1024px) 100vw, 45vw"

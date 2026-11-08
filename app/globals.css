@@ -2,29 +2,147 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #0f172a;
+  --brand: #0ea5e9;
+  --brand-strong: #0369a1;
+  --accent: #fbbf24;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-brand: var(--brand);
+  --color-brand-strong: var(--brand-strong);
+  --color-accent: var(--accent);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family:
+    var(--font-geist-sans),
+    ui-sans-serif,
+    system-ui,
+    -apple-system,
+    "Segoe UI",
+    sans-serif;
   overflow-x: hidden;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
 }
+
+/* ---------- Design-system primitives ---------- */
+
+/* Consistent, visible keyboard focus everywhere */
+:where(a, button, input, textarea, select, [tabindex]):focus-visible {
+  outline: 2px solid var(--brand);
+  outline-offset: 2px;
+  border-radius: 0.5rem;
+}
+
+/* Buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border-radius: 9999px;
+  padding: 0.875rem 1.5rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  line-height: 1.2;
+  text-align: center;
+  transition:
+    background-color 200ms ease,
+    border-color 200ms ease,
+    color 200ms ease,
+    transform 200ms ease,
+    box-shadow 200ms ease;
+}
+.btn:active {
+  transform: scale(0.98);
+}
+
+.btn-primary {
+  background-color: var(--foreground);
+  color: #ffffff;
+}
+.btn-primary:hover {
+  background-color: var(--brand-strong);
+}
+
+.btn-light {
+  background-color: #ffffff;
+  color: var(--foreground);
+}
+.btn-light:hover {
+  background-color: #bae6fd;
+}
+
+.btn-outline {
+  border: 1px solid #cbd5e1;
+  background-color: transparent;
+  color: var(--foreground);
+}
+.btn-outline:hover {
+  border-color: var(--foreground);
+  background-color: #f8fafc;
+}
+
+.btn-outline-light {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background-color: transparent;
+  color: #ffffff;
+}
+.btn-outline-light:hover {
+  border-color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Cards */
+.card {
+  border-radius: 1.5rem;
+  border: 1px solid #e2e8f0;
+  background-color: #ffffff;
+  transition:
+    transform 300ms ease,
+    border-color 300ms ease,
+    box-shadow 300ms ease;
+}
+.card-hover:hover {
+  transform: translateY(-4px);
+  border-color: #94a3b8;
+  box-shadow: 0 20px 40px -20px rgb(15 23 42 / 0.2);
+}
+
+/* Eyebrow label used above section titles */
+.eyebrow {
+  font-size: 0.8125rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  color: var(--brand-strong);
+}
+
+/* Media frames keep a consistent rounded language */
+.media-frame {
+  overflow: hidden;
+  border-radius: 1.75rem;
+  background-color: #f1f5f9;
+}
+
+/* Videos behave predictably across devices */
+video {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-color: #0f172a;
+}
+
+/* ---------- Motion ---------- */
 
 @keyframes fade-in {
   from {
@@ -47,11 +165,23 @@ body {
 }
 
 @keyframes float {
- 0%, 100% {
+  0%,
+  100% {
     transform: translateY(0);
   }
- 50% {
+  50% {
     transform: translateY(-0.75rem);
+  }
+}
+
+@keyframes drawer-in {
+  from {
+    opacity: 0;
+    transform: translateY(-0.5rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
@@ -71,4 +201,15 @@ body {
   --animate-slide-up: slide-up 700ms ease-out both;
   --animate-float: float 6s ease-in-out infinite;
   --animate-float-delayed: float 7s ease-in-out 1s infinite;
+  --animate-drawer-in: drawer-in 200ms ease-out both;
+}
+
+/* Comfortable tap targets and reading measure on small screens */
+@media (max-width: 640px) {
+  .btn {
+    width: 100%;
+  }
+  :where(ul, ol).btn-row {
+    width: 100%;
+  }
 }

@@ -8,9 +8,7 @@ export function GhanaFrancophone() {
     >
       <div className="mx-auto grid max-w-7xl gap-10 px-6 sm:gap-16 sm:px-10 lg:grid-cols-[0.8fr_1.2fr] lg:items-center lg:px-12">
         <div>
-          <p className="text-sm font-semibold uppercase tracking-[0.3em] text-sky-300">
-            Ghana ↔ Francophone Africa
-          </p>
+          <p className="eyebrow !text-sky-300">Ghana ↔ Francophone Africa</p>
           <h2
             id="identity-title"
             className="mt-6 max-w-lg text-4xl font-semibold tracking-tight sm:text-6xl"

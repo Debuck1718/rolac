@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
+import { Media } from "@/components/ui/Media";
 import { images } from "@/lib/images";
 
 export const metadata: Metadata = {
@@ -37,7 +37,7 @@ export default function SeminarsPage() {
   return (
     <main className="flex-1">
       <section className="relative isolate overflow-hidden bg-slate-950 text-white">
-        <Image
+        <Media
           src={images.ceoAward}
           alt="The ROLAC CEO receiving an award at the Africa Global Trade and Investment conference"
           width={800}
@@ -59,10 +59,7 @@ export default function SeminarsPage() {
             understand one another, discover opportunities, and build
             relationships that can cross language and market borders.
           </p>
-          <Link
-            href="/contact"
-            className="mt-9 inline-flex rounded-full bg-white px-6 py-4 text-sm font-semibold text-slate-950 transition hover:bg-sky-200"
-          >
+          <Link href="/contact" className="btn btn-light mt-9 w-fit">
             Discuss a seminar
           </Link>
         </div>
@@ -71,9 +68,7 @@ export default function SeminarsPage() {
       <section className="bg-white">
         <div className="mx-auto max-w-6xl px-6 py-16 sm:px-10 sm:py-24 lg:px-12">
           <div className="max-w-3xl">
-            <p className="text-sm font-semibold uppercase tracking-[0.3em] text-sky-600">
-              The opportunity
-            </p>
+            <p className="eyebrow">The opportunity</p>
             <h2 className="mt-4 text-[clamp(1.75rem,6vw,3rem)] font-semibold leading-tight tracking-tight text-slate-950">
               Good business relationships begin with understanding.
             </h2>
@@ -88,7 +83,7 @@ export default function SeminarsPage() {
             {benefits.map(([title, body], index) => (
               <article
                 key={title}
-                className="rounded-2xl border-slate-200 bg-slate-50 p-6"
+                className="card card-hover p-6"
               >
                 <span className="text-xs font-semibold tracking-[0.2em] text-sky-600">
                   0{index + 1}
@@ -106,9 +101,7 @@ export default function SeminarsPage() {
       <section className="bg-slate-50">
         <div className="mx-auto grid max-w-6xl gap-10 px-6 py-16 sm:px-10 sm:py-24 lg:grid-cols-[0.9fr_1.1fr] lg:px-12">
           <div>
-            <p className="text-sm font-semibold uppercase tracking-[0.3em] text-sky-600">
-              Who it is for
-            </p>
+            <p className="eyebrow">Who it is for</p>
             <h2 className="mt-4 text-[clamp(1.75rem,5vw,2.5rem)] font-semibold tracking-tight text-slate-950">
               Bring the right people to the room.
             </h2>
@@ -116,10 +109,7 @@ export default function SeminarsPage() {
               We can shape a seminar for a closed group, an industry gathering,
               or a wider cross-border business event.
             </p>
-            <Link
-              href="/partnerships"
-              className="mt-7 inline-flex rounded-full bg-slate-950 px-6 py-4 text-sm font-semibold text-white transition hover:bg-slate-700"
-            >
+            <Link href="/partnerships" className="btn btn-primary mt-7 w-fit">
               Explore partnerships
             </Link>
           </div>
@@ -127,7 +117,7 @@ export default function SeminarsPage() {
             {audiences.map((audience) => (
               <li
                 key={audience}
-                className="rounded-2xl border-slate-200 bg-white p-5 text-sm font-semibold text-slate-800"
+                className="card card-hover p-5 text-sm font-semibold text-slate-800"
               >
                 <span className="mr-3 text-sky-600">✦</span>
                 {audience}
@@ -147,10 +137,7 @@ export default function SeminarsPage() {
               Tell us your sector, audience, and goal. We will help you explore
               the right format for a ROLAC seminar.
             </p>
-            <Link
-              href="/contact"
-              className="mt-8 inline-flex rounded-full bg-white px-6 py-4 text-sm font-semibold text-slate-950 transition hover:bg-sky-200"
-            >
+            <Link href="/contact" className="btn btn-light mt-8 w-fit">
               Start the conversation
             </Link>
           </div>

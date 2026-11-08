@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import { SectionPage } from "@/components/ui/SectionPage";
+import { Media } from "@/components/ui/Media";
 import { images } from "@/lib/images";
 
 export const metadata: Metadata = {
@@ -32,13 +32,14 @@ export default function ServicesPage() {
               className="flex flex-col overflow-hidden rounded-2xl border border-slate-200 bg-white transition duration-300 hover:-translate-y-1 hover:border-slate-400 hover:shadow-lg"
             >
               <div className="relative aspect-[16/10] overflow-hidden bg-slate-100">
-                <Image
+                <Media
                   src={service.image}
                   alt={service.alt}
                   width={800}
                   height={600}
                   sizes="(max-width: 640px) 100vw, 50vw"
                   className="h-full w-full object-cover"
+                  video={{ controls: true, preload: "metadata" }}
                 />
               </div>
               <div className="flex flex-1 flex-col p-6">

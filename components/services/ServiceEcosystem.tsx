@@ -48,9 +48,7 @@ export function ServiceEcosystem() {
     >
       <div className="mx-auto max-w-7xl px-6 sm:px-10 lg:px-12">
         <div className="max-w-2xl">
-          <p className="text-sm font-semibold uppercase tracking-[0.3em] text-sky-600">
-            The service ecosystem
-          </p>
+          <p className="eyebrow">The service ecosystem</p>
           <h2
             id="ecosystem-title"
             className="mt-5 text-4xl font-semibold tracking-tight text-slate-950 sm:text-6xl"

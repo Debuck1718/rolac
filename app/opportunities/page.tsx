@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
 import { SectionPage } from "@/components/ui/SectionPage";
+import { Media } from "@/components/ui/Media";
 import { images } from "@/lib/images";
 
 export const metadata: Metadata = {
@@ -22,14 +22,14 @@ export default function OpportunitiesPage() {
       title="Find your next opportunity"
       description="Study, teach, and grow across Ghana and Francophone Africa. Here is how to get started."
       heroImage={images.labStXavierVideo}
-      heroAlt="A ROLAC language laboratory installation at St Xavier Seminary"
+      heroAlt="Video of a ROLAC language laboratory installation at St Xavier Seminary"
     >
       <section className="bg-white">
         <div className="mx-auto max-w-5xl px-6 pb-16 sm:px-10 sm:pb-24">
           <div className="grid gap-4 sm:grid-cols-2">
             <article className="flex flex-col overflow-hidden rounded-2xl border border-slate-200 bg-white">
               <div className="relative aspect-[4/3] overflow-hidden bg-slate-100">
-                <Image src={images.labPrempeh} alt="Students at a ROLAC language laboratory installation at Prempeh College" width={800} height={600} sizes="(max-width: 640px) 100vw, 50vw" className="h-full w-full object-cover" />
+                <Media src={images.labPrempeh} alt="Students at a ROLAC language laboratory installation at Prempeh College" width={800} height={600} sizes="(max-width: 640px) 100vw, 50vw" className="h-full w-full object-cover" />
               </div>
               <div className="p-6">
                 <h3 className="text-lg font-semibold tracking-tight text-slate-950">Students</h3>
@@ -46,7 +46,7 @@ export default function OpportunitiesPage() {
             </article>
             <article className="flex flex-col overflow-hidden rounded-2xl border border-slate-200 bg-white">
               <div className="relative aspect-[4/3] overflow-hidden bg-slate-100">
-                <Image src={images.headteachersTrainingVideo} alt="Headteachers being trained at Yaa Asantewaa SHS" width={800} height={600} sizes="(max-width: 640px) 100vw, 50vw" className="h-full w-full object-cover" />
+                <Media src={images.headteachersTrainingVideo} alt="ROLAC training headteachers at Yaa Asantewaa SHS" width={800} height={600} sizes="(max-width: 640px) 100vw, 50vw" className="h-full w-full object-cover" video={{ controls: true, preload: "metadata" }} />
               </div>
               <div className="p-6">
                 <h3 className="text-lg font-semibold tracking-tight text-slate-950">Teachers</h3>
@@ -75,11 +75,11 @@ export default function OpportunitiesPage() {
           </ol>
 
           <div className="mt-12 overflow-hidden rounded-2xl border border-slate-200">
-            <Image src={images.labMampong} alt="A ROLAC language laboratory installation at Mampong Municipal" width={800} height={1000} sizes="(max-width: 1024px) 100vw, 900px" className="h-64 w-full object-cover sm:h-80" />
+            <Media src={images.labMampong} alt="A ROLAC language laboratory installation at Mampong Municipal" width={800} height={1000} sizes="(max-width: 1024px) 100vw, 900px" className="h-64 w-full object-cover sm:h-80" />
           </div>
           <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
-            <Link href="/contact" className="rounded-full bg-slate-950 px-6 py-4 text-center text-sm font-semibold text-white transition hover:bg-slate-700">Apply now</Link>
-            <Link href="/programs" className="rounded-full border border-slate-300 px-6 py-4 text-center text-sm font-semibold text-slate-800 transition hover:border-slate-950 hover:bg-slate-50">Browse programs</Link>
+            <Link href="/contact" className="btn btn-primary">Apply now</Link>
+            <Link href="/programs" className="btn btn-outline">Browse programs</Link>
           </div>
         </div>
       </section>

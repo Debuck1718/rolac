@@ -53,7 +53,7 @@ export const images = {
   /** Lab installation in Sefwi Bode Roman school (video) */
   labSefwiVideo: `${base}/installation_at_Sefwi_Bode_Roman_school.mp4`,
 
-  /** French laboratory installation at Amansie West (video) */
+  /** French lab installation at Amansie West (video) */
   labAmansieVideo: `${base}/french_lab_installation_at_Amansie_west.mp4`,
 
   /** French teachers training registration in Sefwi (video) */
@@ -64,6 +64,8 @@ export const images = {
 
   /** Donation of language labs at Wa (video) */
   donationWaVideo: `${base}/three_donations_lab_at_wa.mp4`,
+
+
 
   /** Headteacher training session at Yaa Asantewaa SHS (video) */
   headteachersTrainingVideo: `${base}/training_headteachers_at_Yaa_asantewaa_shs.mp4`,
@@ -76,6 +78,8 @@ export const images = {
 
   /** A satisfied district director's acknowledgement (video) */
   districtDirectorVideo: `${base}/acknowledgement_from_satisfied_district_director.mp4`,
+
+  /**" — end of archive */
 
   /** Team receiving an award on stage */
   teamAward: `${base}/Team_recieving_award.jpeg`,

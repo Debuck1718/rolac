@@ -13,9 +13,7 @@ export default function ApplyPage() {
     <main className="flex-1 bg-white">
       <section className="bg-slate-950 text-white">
         <div className="mx-auto max-w-5xl px-6 py-16 sm:px-10 sm:py-24">
-          <p className="text-sm font-semibold uppercase tracking-[0.3em] text-amber-300">
-            Applications
-          </p>
+          <p className="eyebrow !text-amber-300">Applications</p>
           <h1 className="mt-5 max-w-3xl text-[clamp(2.25rem,8vw,4rem)] font-semibold leading-[1.05] tracking-tight">
             Take your next step with ROLAC.
           </h1>
@@ -29,10 +27,8 @@ export default function ApplyPage() {
 
       <section className="bg-slate-50">
         <div className="mx-auto grid max-w-5xl gap-8 px-6 py-14 sm:px-10 sm:py-20 lg:grid-cols-[0.8fr_1.2fr] lg:items-start lg:gap-12">
-          <aside className="rounded-3xl border-slate-200 bg-white p-6 sm:p-8">
-            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-sky-600">
-              Before you apply
-            </p>
+          <aside className="card p-6 sm:p-8">
+            <p className="eyebrow">Before you apply</p>
             <h2 className="mt-4 text-2xl font-semibold tracking-tight text-slate-950">
               Three simple steps
             </h2>

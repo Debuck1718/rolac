@@ -54,9 +54,7 @@ export function NetworkFit() {
     >
       <div className="mx-auto max-w-7xl px-6 sm:px-10 lg:px-12">
         <div className="max-w-2xl">
-          <p className="text-sm font-semibold uppercase tracking-[0.3em] text-sky-600">
-            Find your place
-          </p>
+          <p className="eyebrow">Find your place</p>
           <h2
             id="network-fit-title"
             className="mt-5 text-4xl font-semibold tracking-tight text-slate-950 sm:text-6xl"
