@@ -10,9 +10,9 @@ export const metadata: Metadata = {
 
 const services = [
   { title: "Education", body: "Open doors to learning across languages, classrooms, and borders.", items: ["Professional English", "French programs", "Student exchange", "Study opportunities"], image: images.labStJoseph, alt: "A ROLAC language laboratory installed at St Joseph's Seminary" },
-  { title: "Language", body: "Make communication clearer, more confident, and more connected.", items: ["Translation", "Interpretation", "French laboratories"], image: images.labPrempeh, alt: "A ROLAC language laboratory installed at Prempeh College" },
-  { title: "Mobility", body: "Turn international ambition into practical, supported movement.", items: ["Teacher recruitment", "Student placement", "Accommodation"], image: images.labMampong, alt: "A ROLAC language laboratory installed at Mampong Municipal" },
-  { title: "Culture", body: "Create shared experiences that make language and identity come alive.", items: ["National Oral French Quiz", "Bilingual Reality Show", "Events and engagement"], image: images.quizLaunchSpeech, alt: "The launch of the National Oral French Quiz at the British Council" },
+  { title: "Language", body: "Make communication clearer, more confident, and more connected.", items: ["Translation", "Interpretation", "French laboratories"], image: images.interpretationManhyia, alt: "ROLAC providing interpretation services at Manhyia Palace in Kumasi" },
+  { title: "Mobility", body: "Turn international ambition into practical, supported movement.", items: ["Teacher recruitment", "Student placement", "Accommodation"], image: images.canalPlusPartnership, alt: "ROLAC's CEO and the Canal+ manager after a contract engagement" },
+  { title: "Culture", body: "Create shared experiences that make language and identity come alive.", items: ["National Oral French Quiz", "Bilingual Reality Show", "Events and engagement"], image: images.quizWordFormation, alt: "Students taking part in the word-formation round of the National French Oral Quiz" },
 ];
 
 export default function ServicesPage() {

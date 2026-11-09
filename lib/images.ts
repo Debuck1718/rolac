@@ -81,8 +81,59 @@ export const images = {
 
   /**" — end of archive */
 
-  /** Team receiving an award on stage */
+  /** ROLAC team receiving an award on stage */
   teamAward: `${base}/Team_recieving_award.jpeg`,
+
+  /** Language laboratory equipment donation at Yaa Asantewaa SHS */
+  yaaAsantewaaLabDonation: `${base}/Donation_of_french_lab_equipment_and_installation_at_Yaa_Asantewaa_senior_high_school.jpeg`,
+
+  /** Board members of the National French Oral Quiz */
+  quizBoard: `${base}/Directors_and_board_of_the_national_french_oral_quiz.jpeg`,
+
+  /** Word-formation round at the National French Oral Quiz */
+  quizWordFormation: `${base}/during_the_first_national_french_oral_quiz_word_formation_session.jpeg`,
+
+  /** Junior-high participant in the National French Oral Quiz */
+  juniorQuizParticipant: `${base}/image_of_participant_in_the_junior_high_french_oral_national_quiz_competition.jpeg`,
+
+  /** Jodro International School, junior-high quiz winners */
+  juniorQuizWinners: `${base}/Jodro_International_school_was_crowned_the_1st_winner_in_the_national_french_oral_quiz_at_the_junior_high_level.jpeg`,
+
+  /** Peki SHS, second place in the first national quiz */
+  pekiQuizWinners: `${base}/Peki_shs_2nd_place_in_the_first_national_oral_french_quiz.jpeg`,
+
+  /** Prempeh College, senior-high quiz winners */
+  prempehQuizWinners: `${base}/Prempeh_college_1st_winners_of_the_first_national_french_oral_quiz_for_shs_level.jpeg`,
+
+  /** St Louis students participating in the National French Oral Quiz */
+  stLouisQuizParticipants: `${base}/St_Louis_took_part_in_the_national_french_oral_quiz_some.jpeg`,
+
+  /** Final-round results of the senior-high National French Oral Quiz */
+  quizFinalResults: `${base}/The_result_of_the_national_french_oral_quiz_senior_high_school_level_result_for_all_rounds_in_the_final.jpeg`,
+
+  /** Interpretation service at Manhyia Palace in Kumasi */
+  interpretationManhyia: `${base}/rolac_offering_interpretation_service_at_manhyia_palace_kumasi.jpeg`,
+
+  /** Teachers training at Rosa's Language Centre */
+  teachersTrainingCentre: `${base}/Teachers_training_at_Rosa's_centre.jpeg`,
+
+  /** ROLAC CEO and Canal+ manager after a contract engagement */
+  canalPlusPartnership: `${base}/The_ceo_of_rolac_Mrs_Rosemary_Amankwah_and_Canal_Plus_manager_Mr_Christopher_Bouma_photo_after_contract_engagement.jpeg`,
+
+  /** ROLAC team with the CEO at Mampong */
+  teamMampong: `${base}/workers_photo_with_the_ceo_at_mampong.jpeg`,
+
+  /** Award winners at the Business Executive Conference */
+  businessConferenceAward: `${base}/Award_winners_at_the_Business_Executive_Conference.jpeg`,
+
+  /** ROLAC award with Rev. Fr. Campbell */
+  awardWithRevCampbell: `${base}/award_with_Rev_Fr_Campbell.jpeg`,
+
+  /** Additional archive photos supplied without descriptive captions */
+  randomPhoto1: `${base}/random_photo_1.jpeg`,
+  randomPhoto2: `${base}/random_photo_2.jpeg`,
+  randomPhoto3: `${base}/random_picture_3.jpeg`,
+  randomPhoto4: `${base}/random_photo_4.jpeg`,
 
   /** Students in a ROLAC learning session (legacy image) */
   students: `${base}/students-alt.webp`,

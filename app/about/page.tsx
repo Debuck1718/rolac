@@ -7,9 +7,10 @@ import { images } from "@/lib/images";
 const mediaGallery = [
   { src: images.ghanaDevelopmentAward, alt: "Award presented to ROLAC as Champion of Francophone Education and Cultural Exchange for Development at the 3rd edition of the Ghana Development Awards" },
   { src: images.congratulationsFlyer, alt: "Congratulations flyer to Rosa's Language at the 3rd edition of the Ghana Development Conference and Awards 2026 at La Palm Royal Beach Hotel" },
-  { src: images.educationMinister, alt: "Education Minister Dr Yaw Adutwum delivering his speech at the 2018 launch of the National French Oral Quiz" },
-  { src: images.newspaperPublication, alt: "Newspaper publication of the National Oral French Quiz launch" },
+  { src: images.businessConferenceAward, alt: "Award winners at the Business Executive Conference" },
   { src: images.teamAward, alt: "The ROLAC team receiving an award on stage" },
+  { src: images.canalPlusPartnership, alt: "ROLAC's CEO with the Canal+ manager after a contract engagement" },
+  { src: images.awardWithRevCampbell, alt: "ROLAC receiving an award with Rev. Fr. Campbell" },
 ];
 
 export const metadata: Metadata = {
@@ -41,11 +42,12 @@ export default function AboutPage() {
             </div>
             <div className="media-frame">
               <Media
-                src={images.labSefwiVideo}
-                alt="Video of a ROLAC laboratory installation at Sefwi Bode Roman school"
+                src={images.teamMampong}
+                alt="ROLAC team members with their CEO at Mampong"
+                width={900}
+                height={650}
                 sizes="(max-width: 640px) 100vw, 45vw"
                 className="h-full w-full object-cover"
-                video={{ controls: true, preload: "metadata" }}
               />
             </div>
           </div>

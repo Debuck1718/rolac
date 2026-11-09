@@ -21,15 +21,15 @@ export default function OpportunitiesPage() {
       eyebrow="Opportunities"
       title="Find your next opportunity"
       description="Study, teach, and grow across Ghana and Francophone Africa. Here is how to get started."
-      heroImage={images.labStXavierVideo}
-      heroAlt="Video of a ROLAC language laboratory installation at St Xavier Seminary"
+      heroImage={images.students}
+      heroAlt="Students learning together at ROLAC"
     >
       <section className="bg-white">
         <div className="mx-auto max-w-5xl px-6 pb-16 sm:px-10 sm:pb-24">
           <div className="grid gap-4 sm:grid-cols-2">
             <article className="flex flex-col overflow-hidden rounded-2xl border border-slate-200 bg-white">
               <div className="relative aspect-[4/3] overflow-hidden bg-slate-100">
-                <Media src={images.labPrempeh} alt="Students at a ROLAC language laboratory installation at Prempeh College" width={800} height={600} sizes="(max-width: 640px) 100vw, 50vw" className="h-full w-full object-cover" />
+                <Media src={images.students} alt="Students learning together at ROLAC" width={800} height={600} sizes="(max-width: 640px) 100vw, 50vw" className="h-full w-full object-cover" />
               </div>
               <div className="p-6">
                 <h3 className="text-lg font-semibold tracking-tight text-slate-950">Students</h3>
@@ -46,7 +46,7 @@ export default function OpportunitiesPage() {
             </article>
             <article className="flex flex-col overflow-hidden rounded-2xl border border-slate-200 bg-white">
               <div className="relative aspect-[4/3] overflow-hidden bg-slate-100">
-                <Media src={images.headteachersTrainingVideo} alt="ROLAC training headteachers at Yaa Asantewaa SHS" width={800} height={600} sizes="(max-width: 640px) 100vw, 50vw" className="h-full w-full object-cover" video={{ controls: true, preload: "metadata" }} />
+                <Media src={images.teachersTrainingCentre} alt="Teachers taking part in training at Rosa's Language Centre" width={800} height={600} sizes="(max-width: 640px) 100vw, 50vw" className="h-full w-full object-cover" />
               </div>
               <div className="p-6">
                 <h3 className="text-lg font-semibold tracking-tight text-slate-950">Teachers</h3>
@@ -75,7 +75,7 @@ export default function OpportunitiesPage() {
           </ol>
 
           <div className="mt-12 overflow-hidden rounded-2xl border border-slate-200">
-            <Media src={images.labMampong} alt="A ROLAC language laboratory installation at Mampong Municipal" width={800} height={1000} sizes="(max-width: 1024px) 100vw, 900px" className="h-64 w-full object-cover sm:h-80" />
+            <Media src={images.yaaAsantewaaLabDonation} alt="French language laboratory equipment being donated and installed at Yaa Asantewaa SHS" width={800} height={1000} sizes="(max-width: 1024px) 100vw, 900px" className="h-64 w-full object-cover sm:h-80" />
           </div>
           <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
             <Link href="/contact" className="btn btn-primary">Apply now</Link>

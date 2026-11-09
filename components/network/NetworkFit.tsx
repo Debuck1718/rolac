@@ -126,8 +126,8 @@ export function NetworkFit() {
 
         <div className="mt-6 overflow-hidden rounded-[1.75rem] sm:mt-8">
           <Image
-            src={images.labAmansieWest}
-            alt="A ROLAC language laboratory installation at Amansie West District"
+            src={images.yaaAsantewaaLabDonation}
+            alt="French laboratory equipment donation and installation at Yaa Asantewaa Senior High School"
             width={1600}
             height={900}
             sizes="(max-width: 1280px) 100vw, 1200px"

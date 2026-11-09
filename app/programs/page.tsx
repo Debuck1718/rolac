@@ -16,7 +16,7 @@ const programs = [
     body: "Confident workplace communication for individuals and teams.",
     items: ["Business communication", "Writing and presentation", "Exam preparation"],
     image: images.labStMonica,
-    alt: "ROLAC language laboratory installed at St Monica's SHS",
+    alt: "A ROLAC language laboratory installed at St Monica's SHS",
   },
   {
     number: "02",
@@ -33,8 +33,8 @@ const programs = [
     title: "Student Exchange",
     body: "Time abroad that counts towards your growth.",
     items: ["Host institutions", "Application support", "Pre-departure preparation"],
-    image: images.labMampong,
-    alt: "A ROLAC language laboratory installed at Mampong Municipal",
+    image: images.students,
+    alt: "Students taking part in a ROLAC learning session",
   },
   {
     number: "04",
@@ -42,17 +42,17 @@ const programs = [
     title: "National Oral French Quiz",
     body: "Our flagship annual competition celebrating spoken French.",
     items: ["Regional rounds", "National finals", "Prizes and recognition"],
-    image: images.quizLaunchSpeech,
-    alt: "The CEO speaking at the launch of the National Oral French Quiz at the British Council",
+    image: images.juniorQuizWinners,
+    alt: "Jodro International School crowned the junior-high winners of the National French Oral Quiz",
   },
   {
     number: "05",
     audience: "For performers and audiences",
-    title: "Bilingual Reality Show",
-    body: "Two languages. One stage.",
-    items: ["Live events", "Public voting", "Talent discovery"],
-    image: images.educationMinister,
-    alt: "The Education Minister speaking at the launch of the National Oral French Quiz",
+    title: "French Language Showcase",
+    body: "A public platform for learners to put their French skills into practice.",
+    items: ["Live quiz rounds", "Public events", "Learner recognition"],
+    image: images.quizWordFormation,
+    alt: "Students competing in a word-formation round at the National French Oral Quiz",
   },
   {
     number: "06",
@@ -60,8 +60,8 @@ const programs = [
     title: "Teacher Placement",
     body: "Find and prepare for teaching roles across borders.",
     items: ["Recruitment drives", "Interview preparation", "Relocation guidance"],
-    image: images.headteachersTrainingVideo,
-    alt: "ROLAC training headteachers at Yaa Asantewaa SHS",
+    image: images.teachersTrainingCentre,
+    alt: "Teachers taking part in training at Rosa's Language Centre",
   },
 ];
 
@@ -71,8 +71,8 @@ export default function ProgramsPage() {
       eyebrow="Programs"
       title="Ideas into action"
       description="Choose a pathway for learning, language, mobility, or culture. Every ROLAC program is designed to help you take a practical next step."
-      heroImage={images.labPrempeh}
-      heroAlt="A ROLAC language laboratory installation at Prempeh College"
+      heroImage={images.yaaAsantewaaLabDonation}
+      heroAlt="French laboratory equipment being donated and installed at Yaa Asantewaa Senior High School"
     >
       <section className="bg-white">
         <div className="mx-auto grid max-w-5xl gap-5 px-6 pb-16 sm:grid-cols-2 sm:px-10 sm:pb-24">

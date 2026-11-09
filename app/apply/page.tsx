@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { Media } from "@/components/ui/Media";
 import { ApplicationForm } from "@/components/apply/ApplicationForm";
+import { images } from "@/lib/images";
 
 export const metadata: Metadata = {
   title: "Apply",
@@ -11,7 +13,17 @@ export const metadata: Metadata = {
 export default function ApplyPage() {
   return (
     <main className="flex-1 bg-white">
-      <section className="bg-slate-950 text-white">
+      <section className="relative isolate overflow-hidden bg-slate-950 text-white">
+        <Media
+          src={images.students}
+          alt="Students learning together at ROLAC"
+          width={1200}
+          height={700}
+          priority
+          sizes="100vw"
+          className="absolute inset-0 -z-10 h-full w-full object-cover opacity-25"
+        />
+        <div className="absolute inset-0 -z-10 bg-gradient-to-r from-slate-950 via-slate-950/90 to-slate-950/50" />
         <div className="mx-auto max-w-5xl px-6 py-16 sm:px-10 sm:py-24">
           <p className="eyebrow !text-amber-300">Applications</p>
           <h1 className="mt-5 max-w-3xl text-[clamp(2.25rem,8vw,4rem)] font-semibold leading-[1.05] tracking-tight">

@@ -16,8 +16,8 @@ const serviceAreas = [
     number: "02",
     description: "Make communication clearer, more confident, and more connected.",
     items: ["Translation", "Interpretation", "French laboratories"],
-    image: images.labPrempeh,
-    alt: "Students at a ROLAC language laboratory installation at Prempeh College",
+    image: images.interpretationManhyia,
+    alt: "ROLAC providing interpretation services at Manhyia Palace in Kumasi",
     accent: "bg-sky-300",
   },
   {
@@ -25,8 +25,8 @@ const serviceAreas = [
     number: "03",
     description: "Turn international ambition into practical, supported movement.",
     items: ["Teacher recruitment", "Student placement", "Accommodation"],
-    image: images.labMampong,
-    alt: "A ROLAC language laboratory installed at Mampong Municipal",
+    image: images.canalPlusPartnership,
+    alt: "ROLAC's CEO and the Canal+ manager after a contract engagement",
     accent: "bg-indigo-300",
   },
   {
@@ -34,8 +34,8 @@ const serviceAreas = [
     number: "04",
     description: "Create shared experiences that make language and identity come alive.",
     items: ["National Oral French Quiz", "Bilingual Reality Show", "Events & engagement"],
-    image: images.newspaperPublication,
-    alt: "Newspaper coverage of the National Oral French Quiz launch",
+    image: images.quizWordFormation,
+    alt: "Students taking part in the word-formation round of the National French Oral Quiz",
     accent: "bg-rose-300",
   },
 ];

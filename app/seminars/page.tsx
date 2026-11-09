@@ -38,8 +38,8 @@ export default function SeminarsPage() {
     <main className="flex-1">
       <section className="relative isolate overflow-hidden bg-slate-950 text-white">
         <Media
-          src={images.ceoAward}
-          alt="The ROLAC CEO receiving an award at the Africa Global Trade and Investment conference"
+          src={images.randomPhoto2}
+          alt="ROLAC representatives at an RFI Labo event"
           width={800}
           height={600}
           priority

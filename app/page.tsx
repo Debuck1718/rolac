@@ -17,30 +17,34 @@ export default function Home() {
       <ServiceEcosystem />
       <NetworkFit />
       <Culture />
-      <section className="bg-sky-50">
+      <section className="bg-[#f7f5ef]">
         <div className="mx-auto grid max-w-7xl items-center gap-8 px-6 py-16 sm:px-10 sm:py-20 lg:grid-cols-2 lg:gap-12 lg:px-12">
           <div>
-            <h2 className="max-w-2xl text-[clamp(1.75rem,6vw,3rem)] font-semibold leading-tight tracking-tight text-slate-950">
+            <p className="eyebrow">Your next conversation starts here</p>
+            <h2 className="mt-4 max-w-2xl text-[clamp(1.75rem,6vw,3rem)] font-semibold leading-tight tracking-tight text-slate-950">
               Ready to connect Ghana and the Francophone world?
             </h2>
             <p className="mt-4 max-w-2xl text-lg leading-8 text-slate-600">
-              Tell us what you are looking for and we will point you in the right
-              direction.
+              Whether you are a learner, educator, school or partner, tell us what
+              you hope to achieve. We&apos;ll help you find a thoughtful next step.
             </p>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
-              <Link href="/contact" className="btn btn-primary">Contact ROLAC</Link>
+              <Link href="/contact" className="btn btn-primary">Start a conversation <span aria-hidden="true">→</span></Link>
               <Link href="/opportunities" className="btn btn-outline bg-white">See opportunities</Link>
             </div>
           </div>
-          <div className="media-frame">
+          <div className="media-frame relative min-h-72">
             <Media
-              src={images.gtvInterview}
-              alt="The ROLAC CEO interviewed by GTV during a laboratory installation in the Upper West Region, speaking about the importance of the work"
-              width={900}
-              height={1200}
+              src={images.interpretationManhyia}
+              alt="ROLAC providing interpretation services at Manhyia Palace in Kumasi"
+              width={1000}
+              height={750}
               sizes="(max-width: 1024px) 100vw, 45vw"
-              className="h-full w-full object-cover"
+              className="absolute inset-0 h-full w-full object-cover"
             />
+            <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-slate-950/80 to-transparent px-5 pb-5 pt-16 text-sm font-medium text-white sm:px-7 sm:pb-7">
+              Language creates understanding. Understanding brings us closer.
+            </div>
           </div>
         </div>
       </section>

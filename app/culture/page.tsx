@@ -32,16 +32,16 @@ const experiences = [
   {
     title: "National Oral French Quiz",
     tagline: "Speak. Compete. Connect.",
-    image: images.newspaperPublication,
-    alt: "Newspaper publication of the National Oral French Quiz launch",
+    image: images.juniorQuizWinners,
+    alt: "Jodro International School crowned the junior-high winners of the National French Oral Quiz",
     items: ["Regional rounds", "National finals", "Open to learners everywhere"],
   },
   {
-    title: "Bilingual Reality Show",
-    tagline: "Two languages. One stage.",
-    image: images.ghanaDevelopmentAward,
-    alt: "ROLAC receiving the Ghana Development Award for Francophone education",
-    items: ["Live performances", "Community voting", "Emerging talent"],
+    title: "Inside the quiz",
+    tagline: "Think. Speak. Connect.",
+    image: images.quizWordFormation,
+    alt: "Students taking part in a French-language word-formation round",
+    items: ["Live quiz rounds", "Team participation", "Learner recognition"],
   },
 ];
 
@@ -58,8 +58,8 @@ export default function CulturePage() {
       eyebrow="Culture"
       title="A culture built around people"
       description="See the values, perspectives, and practices that make the ROLAC community distinctive."
-      heroImage={images.quizLaunchSpeech}
-      heroAlt="The CEO speaking at the National Oral French Quiz launch at the British Council"
+      heroImage={images.quizBoard}
+      heroAlt="Directors and board members of the National French Oral Quiz"
     >
       <section className="bg-white">
         <div className="mx-auto max-w-5xl px-6 py-14 sm:px-10 sm:py-20">
